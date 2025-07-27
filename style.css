@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.menu {
+    width: 600px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: orange;
+}
+
+.search {
+    width: 330px;
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid orange;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-right: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid orange;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:focus, .srch:focus {
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    color: white;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.content h1 span {
+    color: orange;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.content h3 {
+    text-align: left;
+}
+
+.register-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 25px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.register-btn:hover {
+    background-color: darkorange;
+}
+
+.form {
+    width: 300px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 210px;
+    right: 150px;
+    border-radius: 10px;
+    padding: 30px 25px;
+    text-align: center;
+    color: white;
+}
+
+.form h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 0 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: lightgray;
+}
+
+.form .btn {
+    width: 90%;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.form .link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.form .link a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ .google-btn {
+    display: inline-block;
+    background: rgb(223, 173, 7);
+    color: #444;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    /* transition: background 0.3s; */
+    border: 1px solid #ccc;
+}
+
+.google-btn:hover {
+    background: #e5a10f;
+    color: #0c0b0b;
+}
