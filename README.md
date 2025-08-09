@@ -1,4 +1,7 @@
 # simple-registration-website
+Live Website:(https://simpleregistrationwebsite.netlify.app/)
+  open in Desktop for Better Experience
+  
  Simple Registration Website
 This is a basic front page of a website designed using HTML and CSS. It includes a navigation bar, landing text, and a login form — suitable for practicing basic UI design and front-end development.
 
