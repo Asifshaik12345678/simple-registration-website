@@ -6,58 +6,54 @@
 
 .main {
     width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("1.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), 
+                url("https://i.postimg.cc/5tcPvmbn/1.jpg");
     background-position: center;
     background-size: cover;
-    height: 109vh;
+    min-height: 100vh;
 }
 
-.navbar {
-    width: 1200px;
-    height: 75px;
+ .navbar {
+    max-width: 1200px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 
-.menu {
-    width: 600px;
-}
-
-ul {
+.menu ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-ul li {
+.menu ul li {
     list-style: none;
-    margin-left: 50px;
+    margin: 10px 20px;
     font-size: 14px;
 }
 
-ul li a {
+.menu ul li a {
     text-decoration: none;
     color: white;
-    font-family: Arial;
     font-weight: bold;
-    transition: 0.4s ease-in-out;
+    transition: 0.4s;
 }
 
-ul li a:hover {
+.menu ul li a:hover {
     color: orange;
 }
 
-.search {
-    width: 330px;
+ .search {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .srch {
-    font-family: 'Times New Roman';
     width: 200px;
     height: 40px;
     background: transparent;
@@ -86,12 +82,18 @@ ul li a:hover {
     outline: none;
 }
 
-.content {
-    width: 1200px;
+ .content-wrapper {
+    max-width: 1200px;
     margin: auto;
-    color: white;
-    text-align: left;
     margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
+}
+
+.content {
+    color: white;
 }
 
 .content h1 {
@@ -109,12 +111,10 @@ ul li a:hover {
     margin-top: 20px;
     font-size: 18px;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
-    color: white;
 }
 
 .content h3 {
-    text-align: left;
+    margin-top: 10px;
 }
 
 .register-btn {
@@ -132,13 +132,9 @@ ul li a:hover {
     background-color: darkorange;
 }
 
-.form {
+ .form {
     width: 300px;
-    height: auto;
     background: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    top: 210px;
-    right: 150px;
     border-radius: 10px;
     padding: 30px 25px;
     text-align: center;
@@ -194,20 +190,70 @@ ul li a:hover {
     font-weight: bold;
 }
 
- .google-btn {
+.google-btn {
     display: inline-block;
     background: rgb(223, 173, 7);
     color: #444;
     padding: 10px 15px;
     border-radius: 5px;
     font-weight: bold;
-    text-decoration: none;
     font-size: 14px;
-    /* transition: background 0.3s; */
     border: 1px solid #ccc;
 }
 
 .google-btn:hover {
     background: #e5a10f;
     color: #0c0b0b;
+}
+@media (max-width: 576px) {
+     .menu ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin: 5px 15px;
+    }
+
+    .search {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-top: 10px;
+    }
+
+    .srch {
+        flex: 1;
+        margin-right: 5px;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .btn {
+        flex: none;
+        width: auto;
+        border-radius: 5px;
+    }
+
+     .content-wrapper {
+        grid-template-columns: 1fr;  
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .form {
+        order: 2;  
+        margin-top: 20px;
+        width: 100%;  
+        max-width: 300px;  
+        margin-left: auto;
+        margin-right: auto;  
+    }
 }
